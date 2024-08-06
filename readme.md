@@ -48,7 +48,7 @@ This setup allows you to switch between playing on devices with DraStic and devi
 
    For Windows:
    ```
-   setup_windows.bat
+   .\setup_windows.bat
    ```
 
 3. Edit the configuration file:
