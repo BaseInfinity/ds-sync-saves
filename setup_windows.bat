@@ -15,10 +15,10 @@ REM Create a config file if it doesn't exist
 if not exist config.json (
     echo Creating sample config file...
     echo { > config.json
-    echo     "watched_folders": [ >> config.json
-    echo         "C:\\Path\\To\\DraStic\\Saves", >> config.json
-    echo         "C:\\Path\\To\\RetroArch\\Saves" >> config.json
-    echo     ] >> config.json
+    echo   "watched_folders": [ >> config.json
+    echo     "C:\\Path\\To\\DraStic\\Saves", >> config.json
+    echo     "C:\\Path\\To\\RetroArch\\Saves" >> config.json
+    echo   ] >> config.json
     echo } >> config.json
     echo Please edit config.json with your desired watch folders.
 )
