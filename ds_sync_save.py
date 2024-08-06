@@ -39,7 +39,11 @@ def load_config(config_path):
         return json.load(config_file)
 
 if __name__ == "__main__":
-    config_path = "config.json"
+    # Use an absolute path for the config file
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(script_dir, "config.json")
+    logging.info(f"Looking for config file at: {config_path}")
+    
     config = load_config(config_path)
 
     observers = []

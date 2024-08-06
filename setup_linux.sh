@@ -45,9 +45,9 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/python3 $SCRIPT_PATH
+WorkingDirectory=$SCRIPT_DIR
 Restart=always
 User=$SUDO_USER
-Type=simple
 
 [Install]
 WantedBy=multi-user.target
