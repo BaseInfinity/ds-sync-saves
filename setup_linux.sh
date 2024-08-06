@@ -7,9 +7,9 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Define variables
-SERVICE_NAME="ds_sync_save"
-SCRIPT_DIR="/home/$SUDO_USER/ds-sync-save"
-SCRIPT_PATH="$SCRIPT_DIR/ds_sync_save.py"
+SERVICE_NAME="ds_sync_saves"
+SCRIPT_DIR="/home/$SUDO_USER/ds-sync-saves"
+SCRIPT_PATH="$SCRIPT_DIR/ds_sync_saves.py"
 SERVICE_PATH="/etc/systemd/system/$SERVICE_NAME.service"
 CONFIG_PATH="$SCRIPT_DIR/config.json"
 

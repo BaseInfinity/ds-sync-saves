@@ -1,6 +1,6 @@
-# DS Sync Save
+# DS Sync Saves
 
-DS Sync Save is a Python script that automatically synchronizes save files for Nintendo DS games between `.dsv` and `.sav` formats. This tool is particularly useful for gamers who play across multiple devices or emulators, especially when using:
+DS Sync Saves is a Python script that automatically synchronizes save files for Nintendo DS games between `.dsv` and `.sav` formats. This tool is particularly useful for gamers who play across multiple devices or emulators, especially when using:
 
 - DraStic emulator (saves in `.dsv` format), which isn't part of RetroArch
 - Other emulators like MelonDS (saves in `.sav` format), which are often included in RetroArch
@@ -35,8 +35,8 @@ This setup allows you to switch between playing on devices with DraStic and devi
 1. Clone this repository or download the script files to your machine running Syncthing:
 
    ```
-   git clone https://github.com/baseinfinity/ds-sync-save.git
-   cd ds-sync-save
+   git clone https://github.com/baseinfinity/ds-sync-saves.git
+   cd ds-sync-saves
    ```
 
 2. Run the setup script for your operating system:
@@ -68,35 +68,35 @@ The service runs automatically in the background. It will start on system boot a
 To check the status of the service:
 
 ```
-sudo systemctl status ds_sync_save.service
+sudo systemctl status ds_sync_saves.service
 ```
 
 To view the logs:
 
 ```
-journalctl -u ds_sync_save.service -f
+journalctl -u ds_sync_saves.service -f
 ```
 
 To stop the service:
 
 ```
-sudo systemctl stop ds_sync_save.service
+sudo systemctl stop ds_sync_saves.service
 ```
 
 To start the service:
 
 ```
-sudo systemctl start ds_sync_save.service
+sudo systemctl start ds_sync_saves.service
 ```
 
 ### Windows
 
-Run the script by double-clicking `run_ds_sync_save.bat` or running it from the command prompt.
+Run the script by double-clicking `run_ds_sync_saves.bat` or running it from the command prompt.
 
 To run the script at startup:
 1. Press Win+R
 2. Type `shell:startup` and press Enter
-3. Copy `run_ds_sync_save.bat` to the opened folder
+3. Copy `run_ds_sync_saves.bat` to the opened folder
 
 To stop the script, close the command prompt window where it's running.
 

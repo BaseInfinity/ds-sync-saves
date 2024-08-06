@@ -1,5 +1,5 @@
 @echo off
-echo Setting up DS Sync Save for Windows...
+echo Setting up DS Sync Saves for Windows...
 
 REM Check for Python installation
 python --version >nul 2>&1
@@ -24,8 +24,8 @@ if not exist config.json (
 )
 
 REM Create a batch file to run the script
-echo @echo off > run_ds_sync_save.bat
-echo python ds_sync_save.py >> run_ds_sync_save.bat
+echo @echo off > run_ds_sync_saves.bat
+echo python ds_sync_saves.py >> run_ds_sync_saves.bat
 
-echo Setup complete. You can now run the script using run_ds_sync_save.bat
-echo To run the script at startup, press Win+R, type 'shell:startup', and copy run_ds_sync_save.bat to the opened folder.
+echo Setup complete. You can now run the script using run_ds_sync_saves.bat
+echo To run the script at startup, press Win+R, type 'shell:startup', and copy run_ds_sync_saves.bat to the opened folder.
