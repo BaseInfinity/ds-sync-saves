@@ -9,6 +9,8 @@ from watchdog.events import FileSystemEventHandler
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
+secondsToWait = 30
+
 class SaveFileHandler(FileSystemEventHandler):
     def __init__(self):
         self.last_synced = {}
@@ -25,7 +27,7 @@ class SaveFileHandler(FileSystemEventHandler):
             other_path = os.path.join(directory, name + other_ext)
             
             current_time = time.time()
-            if path in self.last_synced and current_time - self.last_synced[path] < 1:
+            if path in self.last_synced and current_time - self.last_synced[path] < secondsToWait:
                 return
 
             shutil.copy2(path, other_path)
