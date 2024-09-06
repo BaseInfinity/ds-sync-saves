@@ -1,11 +1,6 @@
 # DS Sync Saves
 
-DS Sync Saves is a Python script that automatically synchronizes save files for Nintendo DS games between `.dsv` and `.sav` formats. This tool is particularly useful for gamers who play across multiple devices or emulators, especially when using:
-
-- DraStic emulator (saves in `.dsv` format), which isn't part of RetroArch
-- Other emulators like MelonDS (saves in `.sav` format), which are often included in RetroArch
-
-By synchronizing these different save file formats, you can seamlessly continue your game progress across devices that support DraStic and those that use RetroArch or other emulators.
+DS Sync Saves is a Python script that automatically synchronizes save files for Nintendo DS games between `.dsv` and `.sav` formats. This tool is particularly useful for people who play across multiple devices or emulators, especially when using Syncthing
 
 ## Features
 
@@ -14,14 +9,6 @@ By synchronizing these different save file formats, you can seamlessly continue 
 - Works on both Windows and Linux
 - Can be set up to run at system startup
 - Works well with Syncthing for cross-device save file synchronization
-
-## How It Works
-
-1. When you play using DraStic emulator, it creates or updates `.dsv` save files.
-2. When you play using other emulators (like MelonDS in RetroArch), they create or update `.sav` files.
-3. This script watches the directories where these save files are stored.
-4. Whenever a save file is updated, the script automatically creates or updates the corresponding file in the other format.
-5. When used with Syncthing, these changes are then synchronized across your devices.
 
 This setup allows you to switch between playing on devices with DraStic and devices using RetroArch or other emulators without manually converting save files, ensuring your game progress is always up-to-date across all your devices.
 
@@ -48,7 +35,7 @@ This setup allows you to switch between playing on devices with DraStic and devi
 
    For Windows:
    ```
-   setup_windows.bat
+   .\setup_windows.bat
    ```
 
 3. Edit the configuration file:
@@ -110,14 +97,5 @@ To stop the script, close the command prompt window where it's running.
 
 If you encounter any issues:
 
-1. Check the service status and logs (Linux) or the command prompt output (Windows).
-2. Ensure the paths in your `config.json` are correct and accessible.
-3. Verify that the required Python packages are installed correctly.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Ensure the paths in your `config.json` are correct and accessible.
+2. Verify that the required Python packages are installed correctly.
